@@ -8,8 +8,24 @@ export default function Tabs(){
         <Container>
             <TabsContainer>
                 <TabItem>
-                    <Icon name="person-add" size={24} color="#FFF" />
-                    <TabText>Indicar Amigos</TabText>
+                    <Icon name="settings-input-antenna" size={24} color="#FFF" />
+                    <TabText>Alterar Credencias</TabText>
+                </TabItem>
+                <TabItem>
+                    <Icon name="view-headline" size={24} color="#FFF" />
+                    <TabText>Historico de Acessos</TabText>
+                </TabItem>
+                <TabItem>
+                    <Icon name="security" size={24} color="#FFF" />
+                    <TabText>Segurança</TabText>
+                </TabItem>
+                <TabItem>
+                    <Icon name="lock" size={24} color="#FFF" />
+                    <TabText>Bloquear Credencial</TabText>
+                </TabItem>
+                <TabItem>
+                    <Icon name="login" size={24} color="#FFF" />
+                    <TabText>Terminar Sessão</TabText>
                 </TabItem>
             </TabsContainer>
         </Container>
