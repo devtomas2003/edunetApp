@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import { Container, Perfil, Nav, NavItem, NavText, SignOutButton, SignOutButtonText } from './styles';
+import { Container, Perfil, Nav, NavItem, NavText, NavButton, SignOutButton, SignOutButtonText } from './styles';
 
 export default function Menu({ translateY }){
     return (
@@ -15,22 +15,30 @@ export default function Menu({ translateY }){
             <Nav>
                 <NavItem>
                     <Icon name="help-outline" size={20} color="#FFF" />
-                    <NavText>Ajuda-me</NavText>
+                    <NavButton onPress={() => { }}>
+                        <NavText>Ajuda-me</NavText>
+                    </NavButton>
                 </NavItem>
                 <NavItem>
                     <Icon name="explore" size={20} color="#FFF" />
-                    <NavText>Mapa da rede</NavText>
+                    <NavButton onPress={() => { }}>
+                        <NavText>Mapa da rede</NavText>
+                    </NavButton>
                 </NavItem>
                 <NavItem>
                     <Icon name="perm-data-setting" size={20} color="#FFF" />
-                    <NavText>Configurar rede</NavText>
+                    <NavButton onPress={() => { }}>
+                        <NavText>Configurar rede</NavText>
+                    </NavButton>
                 </NavItem>
                 <NavItem>
                     <Icon name="app-settings-alt" size={20} color="#FFF" />
-                    <NavText>Configurar APP</NavText>
+                    <NavButton onPress={() => { }}>
+                        <NavText>Configurar APP</NavText>
+                    </NavButton>
                 </NavItem>
             </Nav>
-            <SignOutButton onPress={() => {}}>
+            <SignOutButton onPress={() => { }}>
                 <SignOutButtonText>TERMINAR SESSÃO</SignOutButtonText>
             </SignOutButton>
         </Container>

@@ -5,7 +5,7 @@ import Routes from './routes';
 
 const App = () => (
     <>
-        <StatusBar barStyle="light-content" backgroundColor="#8B10AE" />
+        <StatusBar barStyle="light-content" backgroundColor="#00486e" />
         <Routes />
     </>
 );

@@ -7,7 +7,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Animated } from 'react-native';
 import { PanGestureHandler, State } from 'react-native-gesture-handler';
 
-import { Container, Content, Card, CardHeader, CardContent, CardFooter, Title, Description, Annotation } from './styles';
+import { Container, Content, Card, CardHeader, CardContent, CardFooter, Title, Description, StatusCredential, StatusCircle, Annotation } from './styles';
 
 export default function Main(){
     let offset = 0;
@@ -71,7 +71,10 @@ export default function Main(){
                     </CardHeader>
                     <CardContent>
                         <Title>Estado da credencial</Title>
-                        <Description>Ativa</Description>
+                        <StatusCredential>
+                            <StatusCircle status="green" />
+                            <Description>Ativa</Description>
+                        </StatusCredential>
                     </CardContent>
                     <CardFooter>
                         <Annotation>A ultima autenticação foi no AETTR(local). Tendo ocorrido no dia 26/10/20 às 16:48h.</Annotation>

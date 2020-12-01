@@ -26,6 +26,8 @@ export const NavItem = styled.View`
     border-bottom-color: rgba(255,255,255,0.8);
 `;
 
+export const NavButton = styled.TouchableOpacity``;
+
 export const NavText = styled.Text`
     font-size: 15px;
     color: #FFF;

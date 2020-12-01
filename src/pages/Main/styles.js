@@ -4,7 +4,7 @@ import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
 export const Container = styled.View`
     flex: 1;
-    background: #8B10AE;
+    background: #00486e;
     padding-top: ${getStatusBarHeight()}px;
     justify-content: center;
 `;
@@ -60,4 +60,17 @@ export const CardFooter = styled.Text`
 export const Annotation = styled.Text`
     font-size: 12px;
     color: #333;
+`;
+
+export const StatusCredential = styled.View`
+    flex-direction: row;
+    align-items: center;
+`;
+
+export const StatusCircle = styled.View`
+    background: ${props => `${props.status}`};
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
 `;

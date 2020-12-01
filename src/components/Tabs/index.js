@@ -22,7 +22,7 @@ export default function Tabs({ translateY }){
             <TabsContainer>
                 <TabItem>
                     <Icon name="edit" size={24} color="#FFF" />
-                    <TabText>Alterar Credencias</TabText>
+                    <TabText>Alterar Credencial</TabText>
                 </TabItem>
                 <TabItem>
                     <Icon name="view-headline" size={24} color="#FFF" />
