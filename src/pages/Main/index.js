@@ -66,15 +66,15 @@ export default function Main(){
                     }]
                 }}>
                     <CardHeader>
-                        <Icon name="attach-money" size={28} color="#666" />
-                        <Icon name="visibility-off" size={28} color="#666" />
+                        <Icon name="settings-input-antenna" size={28} color="#666" />
+                        <Icon name="refresh" size={28} color="#666" />
                     </CardHeader>
                     <CardContent>
                         <Title>Estado da credencial</Title>
                         <Description>Ativa</Description>
                     </CardContent>
                     <CardFooter>
-                        <Annotation>A ultima autenticação foi local, tendo ocorrido no dia 26/10/20 às 16:48</Annotation>
+                        <Annotation>A ultima autenticação foi no AETTR(local). Tendo ocorrido no dia 26/10/20 às 16:48h.</Annotation>
                     </CardFooter>
                 </Card>
                 </PanGestureHandler>

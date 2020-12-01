@@ -21,7 +21,7 @@ export default function Tabs({ translateY }){
         }}>
             <TabsContainer>
                 <TabItem>
-                    <Icon name="settings-input-antenna" size={24} color="#FFF" />
+                    <Icon name="edit" size={24} color="#FFF" />
                     <TabText>Alterar Credencias</TabText>
                 </TabItem>
                 <TabItem>
@@ -33,8 +33,8 @@ export default function Tabs({ translateY }){
                     <TabText>Segurança</TabText>
                 </TabItem>
                 <TabItem>
-                    <Icon name="room" size={24} color="#FFF" />
-                    <TabText>Ativar Roaming</TabText>
+                    <Icon name="local-airport" size={24} color="#FFF" />
+                    <TabText>Configurar Roaming</TabText>
                 </TabItem>
                 <TabItem>
                     <Icon name="lock" size={24} color="#FFF" />
