@@ -1,17 +1,50 @@
 import React from 'react';
 
 import Header from '../../components/Header';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import Tabs from '../../components/Tabs';
+import Menu from '../../components/Menu';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import { Animated } from 'react-native';
+import { PanGestureHandler, State } from 'react-native-gesture-handler';
 
 import { Container, Content, Card, CardHeader, CardContent, CardFooter, Title, Description, Annotation } from './styles';
 
 export default function Main(){
+    const translateY = new Animated.Value(0);
+
+    const animatedEvent = Animated.event(
+        [
+            {
+                nativeEvent:{
+                    translationY: translateY
+                }
+            }
+        ],
+        { useNativeDriver: true }
+    );
+
+    function onHandlerStateChange(event){
+
+    }
+
     return (
         <Container>
             <Header />
             <Content>
-                <Card>
+                <Menu translateY={translateY} />
+                <PanGestureHandler
+                    onGestureEvent={animatedEvent}
+                    onHandlerStateChange={onHandlerStateChange}
+                >
+                <Card style={{
+                    transform: [{
+                        translateY: translateY.interpolate({
+                            inputRange: [-350, 0, 380],
+                            outputRange: [-50, 0, 380],
+                            extrapolate: 'clamp'
+                        })
+                    }]
+                }}>
                     <CardHeader>
                         <Icon name="attach-money" size={28} color="#666" />
                         <Icon name="visibility-off" size={28} color="#666" />
@@ -24,6 +57,7 @@ export default function Main(){
                         <Annotation>A ultima autenticação foi local, tendo ocorrido no dia 26/10/20 às 16:48</Annotation>
                     </CardFooter>
                 </Card>
+                </PanGestureHandler>
             </Content>
             <Tabs />
         </Container>

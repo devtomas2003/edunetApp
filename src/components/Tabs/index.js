@@ -27,10 +27,6 @@ export default function Tabs(){
                     <Icon name="lock" size={24} color="#FFF" />
                     <TabText>Bloquear Credencial</TabText>
                 </TabItem>
-                <TabItem>
-                    <Icon name="login" size={24} color="#FFF" />
-                    <TabText>Terminar Sessão</TabText>
-                </TabItem>
             </TabsContainer>
         </Container>
     );
