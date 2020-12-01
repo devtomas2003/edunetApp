@@ -20,6 +20,10 @@ export default function Tabs(){
                     <TabText>Segurança</TabText>
                 </TabItem>
                 <TabItem>
+                    <Icon name="room" size={24} color="#FFF" />
+                    <TabText>Ativar Roaming</TabText>
+                </TabItem>
+                <TabItem>
                     <Icon name="lock" size={24} color="#FFF" />
                     <TabText>Bloquear Credencial</TabText>
                 </TabItem>
